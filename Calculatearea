@@ -1,0 +1,13 @@
+<html>
+ <head><title>Calculate Area</title></head>
+<body>
+<script>
+var r = prompt("Enter radius:");
+var area = Math.PI * r * r;
+var circumference = 2 * Math.PI * r;
+
+document.write("Area = " + area + "<br>");
+document.write("Circumference = " + circumference);
+</script>
+</body>
+</html>
