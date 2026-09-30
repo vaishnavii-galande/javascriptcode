@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Confirm Box</title>
+</head>
+<body>
+
+<script>
+var choice = confirm("Do you want to continue?");
+
+if (choice) {
+    alert("You clicked OK. Continuing...");
+} else {
+    alert("You clicked Cancel. Stopping...");
+}
+</script>
+
+</body>
+</html>
