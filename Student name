@@ -1,0 +1,56 @@
+<html>
+<body>
+
+Name:
+<input type="text" id="name"
+onblur="checkName()"
+onclick="changeImage()">
+
+<p id="msg"></p>
+
+<img id="img" src="image.jpg"
+width="100"
+onload="imageLoaded()"
+onmouseover="increaseSize()"
+onmouseup="normalSize()">
+
+<script>
+function checkName()
+{
+    var name = document.getElementById("name").value;
+
+    if (name != "")
+    {
+        document.getElementById("msg").innerHTML = name;
+        document.getElementById("msg").style.color = "red";
+        document.getElementById("msg").style.fontSize = "18px";
+    }
+    else
+    {
+        document.getElementById("img").style.display = "block";
+    }
+}
+
+function imageLoaded()
+{
+    console.log("Image loaded");
+}
+
+function increaseSize()
+{
+    document.getElementById("img").width = 200;
+}
+
+function normalSize()
+{
+    document.getElementById("img").width = 100;
+}
+
+function changeImage()
+{
+    document.getElementById("img").style.display = "block";
+}
+</script>
+
+</body>
+</html>
