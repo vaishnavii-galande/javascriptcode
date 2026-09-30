@@ -1,0 +1,23 @@
+<form onsubmit="return validateEmail()">
+    Email:
+    <input type="text" id="email">
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+function validateEmail()
+{
+    var email = document.getElementById("email").value;
+
+    if (email.includes("@"))
+    {
+        alert("Valid Email");
+        return true;
+    }
+    else
+    {
+        alert("Email must contain @");
+        return false;
+    }
+}
+</script>
